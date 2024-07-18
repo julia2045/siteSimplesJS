@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculo</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!--Fazer uma lista de botões principais
+  dentro desta lista adicionar o subMenu e suas informações
+  adicionar os atributos necessarios para relacionar com o javascript e estilizar no css
+  class, data-id...-->
+  <header class="header">
+    <img src="/img/logo botão sem fundo.png" alt="">
+      <nav class="menu">
+        <ul>
+          <li class="menuItem">
+            <a href="" class="menu-item-button">Cursos</a>
+            <div class="subMenu">
+              <nav>
+                <ul>
+                  <li><a href="">🎨 Design de Interiores</a></li>
+                  <li><a href="">📓 Curso CIE</a></li>
+                  <li><a href="">🖥️ HTML e CSS Básico</a></li>
+                  <li><a href="">🖥️ Javascript</a></li>
+                </ul>
+              </nav>
+            </div>
+          </li>
+          <li class="menuItem">
+            <a href="" class="menu-item-button">Experiência</a>
+            <div class="subMenu">
+              <nav>
+                <ul>
+                  <li  class="titleItem" ><a href="">Empresas</a></li>
+                  <li><a href="">Ma Kamilos</a></li>
+                  <li><a href="">GREMP 3</a></li>
+                </ul>
+                <ul>
+                  <li class="titleItem"><a  href="">Cargos</a></li>
+                  <li><a href="">Aprendiz de Design de Produto</a></li>
+                  <li><a href="">Design de Produto</a></li>
+                  <li><a href="">Aprendiz de Marketing</a></li>
+                  <li><a href="">Vendedora</a></li>
+                  <li><a href="">Projetista</a></li>
+                  <li><a href="">Treinadora</a></li>
+                </ul>
+              </nav>
+            </div>
+          </li>
+          <li class="menuItem">
+            <a href="" class="menu-item-button">Contato</a>
+            <div class="subMenu">
+              <nav>
+                <ul>
+                  <li><a href="">📱 WhatsApp</a></li>
+                  <li><a href="">📧 Email</a></li>
+                  <li><a href="">🧑🏾‍💼 Linkedin</a></li>
+                </ul>
+              </nav>
+            </div>
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <!--Utilizar a tag dialog que representa uma caixa de diálogo ou outro componente interativo, tal como um inspetor ou janela.
+  dentro dela inserir o layout necessario com os atributos para estilizar e relacionar ao javascript-->
+ <dialog>
+   <div class="layoutPopUp ">
+      <div>
+        <img src="/img/Black White Minimalist Logo (1).png">
+      </div>
+      <div>
+        <button class="closePopUp">X</button>
+        <h1>Receba meu Curriculo no Seu Whatsapp</h1>
+        <form class="form" action="./">
+          <div>
+            <label for="name">Nome<span class="detailRed">*</span></label>
+            <input type="text" id="name" name="nome" placeholder="Seu Nome" >
+          </div>
+          <div>
+            <label for="name">Sobrenome<span class="detailRed">*</span></label>
+            <input type="text" id="Sobrenome" name="Sobrenome" placeholder="Seu Sobrenome">
+          </div>
+          <div>
+            <label for="telefone"> Número de Whatsapp <span class="detailRed">*</span></label>
+            <input type="text" id="telefone" name="telefone" placeholder="(XX)00000-0000">
+          </div>
+        </form>
+        <button class="buttonPopUp">Enviar</button>
+      </div>
+   </div>
+</dialog>
+<!--Adicionar o mesmo numero de botãos que o numero de conteudo
+atribuir os atributos necessarios como  class e data-id para estilizar e relacionar ao javascript-->
+<main>
+  <div class="listButtonsTab">
+    <ul>
+      <li>
+        <button  class="buttonTab" >
+         <a data-tabbutton="1" href="">Cursos</a>
+        </button>
+      </li>
+      <li>
+        <button   class="buttonTab" >
+          <a data-tabbutton="2" href="">Expêriencias</a>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div data-tabContent="1" class="courses tabContent active"  id="courses" aria-label="Cursos">
+    <div>
+      <ul class="formation-list">
+        <li class="formation">
+          <span>ETEC PRES. VARGAS</span>
+          <h4>Designer de interiores integrado ao ensino médio</h4>
+          <span class="duration">3 anos</span>
+        </li>
+        <li class="formation">
+          <span>Origamid</span>
+          <h4>HTML e CSS para iniciantes</h4>
+          <span class="duration">23 horas</span>
+        </li>
+        <li class="formation">
+          <span>CIE</span>
+          <h4>Curso de incorporação de edificios</h4>
+          <span class="duration">37 horas</span>
+        </li>                        
+        <li class="formation">
+          <span>Papercraf lowpoly</span>
+          <h4>Curso de modelagem em 3D para lowpoly através do Blender</h4>
+          <span class="duration">8 módulos</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div  data-tabContent="2" class="experience tabContent"  id="experience" aria-label="expêriencia">
+    <div>
+      <ul class="formation-list">
+        <li class="formation color">
+          <span>MA KAMILOS</span>
+          <p>Nesta empresa trabalho há mais de um ano, criando, modelando, executando a colagem e finalização das peças em 3D. além de participar da parte de vendas, tanto online,quanto presenciais, Fotos e edição da própria, auxílio em marketing utilizando conteúdos e estratégias entre outros.</p>
+                  
+        </li>
+        <li class="formation red color">
+          <span>GREMP3</span>
+          <p>Nesta empresa trabalho há mais de um ano, Onde auxilio em criação de plantas, layouts e fachadas, tanto no AutoCad, quanto no Sketchup. Auxilio em elaboração de projetos de design de interiores de apartamentos e de areas de lazer de condominios. Atualmente a empresa esta implantando o programa sienge, para melhor organização de obras e eu realizo atividades no programa. </p>     
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+<footer class="footer" id="contact">
+  <div class="footer-conteiner">
+      <h3 class="text">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</h3>
+      <ul class="contact">
+        <li class="contat-list">Contatos:</li>
+        <li>Telefone: 
+          <a target="_blank" href="https://wa.me/5511974410050">(11) 97441-0050</a>
+        </li>
+        <li>Email:
+          <a target="_blank" href="https://%3Dmalito:juliamartins2045@gmail.com/">Juliamartins2045@gmail.com</a>
+        </li>
+        <li>Instagram:
+          <a target="_blank" href="https://www.instagram.com/ju_martins20/">@ju_martins20</a>
+        </li>
+      </ul>
+  </div>
+  <img class="iconFooter" src="/img/Black White Minimalist Logo (1).png" alt="">
+</footer>
+  <script src="/script.js"></script>
+</body>
+</html>

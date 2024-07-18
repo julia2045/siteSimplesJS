@@ -1,0 +1,49 @@
+.experience{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 100%;
+    align-items: center;
+    gap: 100px;
+    padding: 40px 30px;
+}
+
+.experience .caption{
+    color:rgb(230, 230, 230);
+}
+
+.color{
+    background:rgb(230, 230, 230) ;
+}
+
+.color:hover{
+    background: white;
+}
+
+.formation{
+    position: relative;
+    
+}
+
+.image{
+    background: white;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    padding: 10px 10px;
+    bottom: 10px;
+    right: 10px;
+    
+}
+
+.image:hover{
+    background:rgb(230, 230, 230);
+}
+
+.tabContent{
+    display: none;
+}
+
+.tabContent.active {
+    display: block;
+}

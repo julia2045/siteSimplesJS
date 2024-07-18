@@ -1,0 +1,33 @@
+footer{
+    background-color: rgb(226, 189, 230);
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    position: relative;
+
+}
+
+.footer a{
+    text-decoration: none;
+    color:#b7a5b9;
+
+}
+.contact{
+    list-style: none;
+    padding: 10px;
+}
+
+.contact li{
+    padding: 10px;
+    color:#b7a5b9;
+}
+
+.footer a:hover{
+    color: #000000;
+}
+
+.iconFooter{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

@@ -1,0 +1,95 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.menu{
+  align-self: center;
+}
+.header{
+  display: flex;
+  gap: 30px;
+  background: rgb(245, 228, 245);
+  padding: 20px;
+}
+/* '>' filho direto do elemento*/
+nav.menu > ul {
+  display: flex;
+  gap: 10px;
+}
+.menuItem {
+  list-style: none;
+}
+nav.menu > ul > li{
+  padding: 10px;
+  background: rgb(248, 225, 248);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+  transition: all .5s;
+}
+nav.menu > ul > li a{
+  text-decoration: none;
+  color:rgb(9, 5, 9);
+  font-size: 20px;
+  font-family: "poppins",sans-serif;
+}
+nav.menu > ul > li:hover{
+  background: rgb(206, 153, 206);
+  cursor: pointer;
+  transition:all .5s;
+}
+nav.menu > ul > li.active .subMenu {
+  display: block;
+}
+nav.menu > ul > li.active {
+  background-color:rgb(206, 153, 206);
+}
+img{
+  max-width: 100px;
+  height: 100px;
+  padding-bottom: 20px;
+}
+.subMenu{
+  position: absolute;
+  background: rgb(206, 153, 206);
+  width: 100%;
+  left: 0;
+  padding: 30px;
+  display: none;
+  margin-top: 10px;
+}
+.subMenu nav{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  
+}
+.subMenu ul{
+    padding-top: 40px;
+}
+.subMenu li{
+  list-style: none;
+  padding-bottom: 10px;
+}
+nav.menu > ul > li.active .subMenu a{
+  font-family: "poppins" , sans-serif;
+  color:#7F6D7E;
+  text-decoration: none;
+  transition: all 300ms;
+  cursor: pointer; 
+}
+nav.menu > ul > li.active .subMenu a:hover{
+  color: black;
+  font-weight: 700px;
+}
+nav.menu > ul > li.active .subMenu .titleItem a{
+  font-size: 20px;
+  color: black;
+}
+
+  
+
+
+
+
